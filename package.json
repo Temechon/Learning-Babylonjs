@@ -1,0 +1,14 @@
+{
+  "name": "learning-babylonjs",
+  "version": "1.0.0",
+  "dependencies":{
+    "uglifyjs": "latest"
+  },
+  "scripts": {
+    "setup:bourbon" : "gem install bourbon",
+    "setup:neat" : "gem install neat",
+    "setup" : "npm run setup:bourbon && npm run setup:neat && cd sass/libs && bourbon install && neat install",
+
+    "build" : "uglifyjs js/lib/jquery-2.1.4.min.js js/lib/velocity.js js/lib/velocity.ui.js js/lib/Quttons.js -o js/lib/package.min.js"
+  }
+}

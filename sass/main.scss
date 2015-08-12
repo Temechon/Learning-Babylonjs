@@ -1,0 +1,47 @@
+@import "libs/bourbon/bourbon";
+@import "libs/neat/neat";
+
+$blue : #34495e;
+$red : #ea3956;
+
+$light_blue:#F7F7F7;
+
+html, body {
+  margin:0;
+  padding:0;
+  font-family: 'Open Sans', serif;
+}
+
+section {
+  padding: 20px 0 0 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Oswald', sans-serif;
+}
+h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+$mobile-size:320px;
+$tablet-size:720px;
+$desktop-size:1050px;
+
+$mobile: new-breakpoint(min-width $mobile-size max-width $desktop-size 4);
+$desktop: new-breakpoint(min-width $desktop-size 12);
+
+
+//$largedesktop-size:em(1050);
+
+
+// mobile css
+@import "mobile";
+// Desktop css
+@import "desktop";
+

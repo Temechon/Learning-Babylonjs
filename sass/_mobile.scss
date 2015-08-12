@@ -1,0 +1,272 @@
+@include media($mobile) {
+
+  $height_header: 1150px;
+  $height_topics: 1050px;
+  $height_stats: 320px;
+  $height_quotes: 900px;
+  $height_pricing: 880px;
+  $height_aboutme: 600px;
+
+  .row {
+    @include span-columns(4);
+    padding: 0 10px 0 10px;
+  }
+
+  /** HEADER**/
+  .header {
+    position:relative;
+    background: url(../img/cover.png) center center no-repeat fixed;
+    background-size: cover;
+    height:$height_header;
+
+    // white overlay
+    .overlay {
+      position:absolute;
+      width:100%;
+      height:100%;
+      background: rgba(255, 255, 255, 0.9);
+      top:0;
+      z-index:1;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+
+    // e-book icon
+    .icon {
+      text-align: center;
+      color: #333;
+      height: 100px;
+      font-size: 2.5em;
+      i {
+        font-size: 1.5em;
+        color: $red;
+        margin-right: 15px;
+      }
+    }
+
+    .title {
+      @include span-columns(4);
+
+      .title_text {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-family: 'Maven Pro', sans-serif;
+        text-align: center;
+      }
+
+      .baseline {
+        padding-top: 30px;
+        font-size: 1.5em;
+        font-family: 'Open Sans', serif;
+        font-weight: 300;
+        text-align: center;
+      }
+      .button {
+        @include span-columns(4);
+        margin-top: 20px;
+        padding: 20px 10px 20px 10px;
+        border: 1px solid #ea3956;
+        border-radius: 64px;
+        text-transform: uppercase;
+        text-align: center;
+        box-sizing: border-box;
+        color: #ea3956;
+        cursor: pointer;
+        i {
+          position: relative;
+          left: 30px;
+          @include transition(all 0.25s linear);
+        }
+        &.first {
+          background-color: #ea3956;
+          color: white;
+        }
+        &:hover {
+          i {
+            left: 60px;
+          }
+        }
+      }
+    }
+
+    .cover {
+      @include span-columns(4);
+      text-align: center;
+      margin-top:40px;
+      img {
+        max-width:80%;
+      }
+    }
+  }
+
+  /** TOPICS **/
+  .topics {
+    height:$height_topics;
+
+    ul {
+      margin:0;
+      padding:0;
+    }
+    .topic {
+      @include span-columns(2);
+      @include omega(2n);
+      margin-bottom: 20px;
+      // Icons on topics
+      i {
+        font-size: 3em;
+        color:$blue;
+        display: block;
+        margin:0.25em 0 0.25em 0;
+      }
+      text-align: center;
+    }
+  }
+
+  /** STATS **/
+  .stats {
+    height : $height_stats;
+    background-color: $red;
+    color:white;
+    padding-top:1.5em;
+    text-align: center;
+
+    ul {
+      margin:0;
+      padding:0;
+    }
+    .stat {
+      @include span-columns(2);
+
+      &:first-of-type {
+        @include span-columns(4);
+      }
+      text-align:center;
+      font-size: 1.1em;
+      i {
+        font-size: 3em;
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+
+  /** QUOTES **/
+  .quotes {
+    height:$height_quotes;
+    .quote {
+      @include span-columns(4);
+      margin: 30px auto 30px auto;
+      text-align: center;
+
+      .quote_name {
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+      .quote_text {
+        @include span-columns(4);
+      }
+
+      .quote_img{
+        text-align: center;
+        @include span-columns(4);
+        img {
+          max-width:80px;
+        }
+      }
+    }
+  }
+
+  /** PRICES **/
+  .prices {
+    height:$height_pricing;
+    background-color: $light_blue;
+    .row {
+      padding: 0 40px 0 40px;
+    }
+    .package {
+      @include span-columns(4);
+      height : 320px;
+      border: 1px solid rgb(221, 221, 221);
+      margin-bottom: 20px;
+
+      .package_header {
+        height:100px;
+        background-color: $red;
+        color:white;
+        text-align: center;
+        font-size: 1.6em;
+        font-family: 'Open Sans';
+        line-height: 50px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 20px;
+        i {
+          float:right;
+          &.fa-check-circle {
+            color:green;
+          }
+          &.fa-ban {
+            color:$red;
+          }
+        }
+      }
+      li {
+        border-bottom: 1px dotted #ddd;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        i {
+          font-size: 1.5em;
+        }
+      }
+
+      .buy_button {
+        padding:12px;
+        border: 1px solid $red;
+        border-radius: 64px;
+        width:65%;
+        margin:auto;
+        text-align: center;
+        color:$red;
+        cursor: pointer;
+        i {
+          position:relative;
+          left:30px;
+          @include transition(all 0.25s linear);
+        }
+        &:hover {
+          i {
+            left: 60px;
+          }
+        }
+      }
+
+    }
+  }
+
+  /** ABOUT ME */
+  .aboutme {
+    height : $height_aboutme;
+    text-align: center;
+
+    .me {
+      padding-top:50px;
+      font-size : 1.1em;
+      font-weight: 300;
+      ul {
+        text-align: left;
+      }
+      a {
+        text-decoration: none;
+        color:$red;
+        font-weight: 400;
+      }
+    }
+
+  }
+
+
+}
