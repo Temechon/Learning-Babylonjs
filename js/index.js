@@ -20,7 +20,7 @@
         showCursor: true,
         contentType: 'html',
         startDelay: 1000,
-        typeSpeed: 30
+        typeSpeed: 5
     });
 
 })();
