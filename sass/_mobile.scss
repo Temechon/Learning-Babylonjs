@@ -155,6 +155,12 @@
   /** QUOTES **/
   .quotes {
     height:$height_quotes;
+
+    a {
+      text-decoration: none;
+      color:$red;
+    }
+
     .quote {
       @include span-columns(4);
       margin: 30px auto 30px auto;

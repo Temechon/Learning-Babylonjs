@@ -175,6 +175,9 @@ h2 {
   /** QUOTES **/
   .quotes {
     height: 900px; }
+    .quotes a {
+      text-decoration: none;
+      color: #ea3956; }
     .quotes .quote {
       float: left;
       display: block;
@@ -345,6 +348,9 @@ h2 {
   /** QUOTES **/
   .quotes {
     height: 500px; }
+    .quotes a {
+      text-decoration: none;
+      color: #ea3956; }
     .quotes .quote {
       max-width: 68em;
       margin-left: auto;
@@ -442,7 +448,9 @@ h2 {
 
   /** ABOUT ME */
   .aboutme {
-    height: 500px; }
+    height: 500px;
+    width: 80%;
+    margin: auto; }
     .aboutme .me {
       padding-top: 50px;
       font-size: 1.1em;

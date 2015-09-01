@@ -71,6 +71,11 @@
   /** QUOTES **/
   .quotes {
     height:$height_quotes;
+
+    a {
+      text-decoration: none;
+      color:$red;
+    }
     .quote {
       @include outer-container;
       margin: 30px auto 30px auto;
@@ -170,6 +175,8 @@
   /** ABOUT ME */
   .aboutme {
     height : $height_aboutme;
+    width:80%;
+    margin:auto;
 
     .me {
       padding-top:50px;
