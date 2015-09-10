@@ -3,6 +3,7 @@
   $height_topics:700px;
   $height_stats:250px;
   $height_quotes:500px;
+  $height_screens:700px;
   $height_pricing:700px;
   $height_aboutme:500px;
 
@@ -99,10 +100,25 @@
     }
   }
 
+  /** SCREENSHOTS **/
+  .screens {
+    height:$height_screens;
+    background-color: $light_blue;
+
+    .screen {
+      @include span-columns(3);
+      @include omega(4n);
+      margin-bottom: 20px;
+      img {
+        max-height: 150px;
+      }
+      text-align: center;
+    }
+  }
+
   /** PRICES **/
   .prices {
     height:$height_pricing;
-    background-color: $light_blue;
     .package {
       @include span-columns(4);
       height : 320px;
@@ -175,9 +191,7 @@
   /** ABOUT ME */
   .aboutme {
     height : $height_aboutme;
-    width:80%;
-    margin:auto;
-
+    background-color: $light_blue;
     .me {
       padding-top:50px;
       font-size : 1.1em;

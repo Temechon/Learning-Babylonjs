@@ -144,7 +144,7 @@ h2 {
 
   /** STATS **/
   .stats {
-    height: 320px;
+    height: 450px;
     background-color: #ea3956;
     color: white;
     padding-top: 1.5em;
@@ -174,7 +174,7 @@ h2 {
 
   /** QUOTES **/
   .quotes {
-    height: 900px; }
+    height: 1150px; }
     .quotes a {
       text-decoration: none;
       color: #ea3956; }
@@ -208,10 +208,30 @@ h2 {
         .quotes .quote .quote_img img {
           max-width: 80px; }
 
+  /** SCREENSHOTS **/
+  .screens {
+    height: 1050px;
+    background-color: #F7F7F7; }
+    .screens .screen {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 46.28851%;
+      margin-bottom: 20px;
+      text-align: center; }
+      .screens .screen:last-child {
+        margin-right: 0; }
+      .screens .screen:nth-child(2n) {
+        margin-right: 0; }
+      .screens .screen:nth-child(2n+1) {
+        clear: left; }
+      .screens .screen img {
+        max-height: 150px;
+        max-width: 100px; }
+
   /** PRICES **/
   .prices {
-    height: 880px;
-    background-color: #F7F7F7; }
+    height: 950px; }
     .prices .row {
       padding: 0 40px 0 40px; }
     .prices .package {
@@ -219,7 +239,7 @@ h2 {
       display: block;
       margin-right: 7.42297%;
       width: 100%;
-      height: 320px;
+      height: 350px;
       border: 1px solid #dddddd;
       margin-bottom: 20px; }
       .prices .package:last-child {
@@ -267,7 +287,8 @@ h2 {
 
   /** ABOUT ME */
   .aboutme {
-    height: 600px;
+    height: 900px;
+    background-color: #F7F7F7;
     text-align: center; }
     .aboutme .me {
       padding-top: 50px;
@@ -381,10 +402,29 @@ h2 {
         .quotes .quote .quote_img img {
           max-width: 80px; }
 
-  /** PRICES **/
-  .prices {
+  /** SCREENSHOTS **/
+  .screens {
     height: 700px;
     background-color: #F7F7F7; }
+    .screens .screen {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-bottom: 20px;
+      text-align: center; }
+      .screens .screen:last-child {
+        margin-right: 0; }
+      .screens .screen:nth-child(4n) {
+        margin-right: 0; }
+      .screens .screen:nth-child(4n+1) {
+        clear: left; }
+      .screens .screen img {
+        max-height: 150px; }
+
+  /** PRICES **/
+  .prices {
+    height: 700px; }
     .prices .package {
       float: left;
       display: block;
@@ -449,8 +489,7 @@ h2 {
   /** ABOUT ME */
   .aboutme {
     height: 500px;
-    width: 80%;
-    margin: auto; }
+    background-color: #F7F7F7; }
     .aboutme .me {
       padding-top: 50px;
       font-size: 1.1em;
