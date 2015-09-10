@@ -163,6 +163,9 @@
           font-size: 1.5em;
         }
       }
+      a {
+        text-decoration: none;
+      }
 
       .buy_button {
         padding:12px;
@@ -171,8 +174,9 @@
         width:65%;
         margin:auto;
         text-align: center;
-        color:$red;
         cursor: pointer;
+        text-decoration: none;
+        color:$red;
         i {
           position:relative;
           left:30px;

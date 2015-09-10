@@ -267,6 +267,8 @@ h2 {
         padding-bottom: 10px; }
         .prices .package li i {
           font-size: 1.5em; }
+      .prices .package a {
+        text-decoration: none; }
       .prices .package .buy_button {
         padding: 12px;
         border: 1px solid #ea3956;
@@ -468,6 +470,8 @@ h2 {
         padding-bottom: 10px; }
         .prices .package li i {
           font-size: 1.5em; }
+      .prices .package a {
+        text-decoration: none; }
       .prices .package .buy_button {
         padding: 12px;
         border: 1px solid #ea3956;
@@ -475,8 +479,9 @@ h2 {
         width: 65%;
         margin: auto;
         text-align: center;
-        color: #ea3956;
-        cursor: pointer; }
+        cursor: pointer;
+        text-decoration: none;
+        color: #ea3956; }
         .prices .package .buy_button i {
           position: relative;
           left: 30px;
