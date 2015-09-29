@@ -119,8 +119,9 @@
   /** PRICES **/
   .prices {
     height:$height_pricing;
+    text-align: center;
     .package {
-      @include span-columns(4);
+      @include span-columns(3);
       height : 320px;
       border: 1px solid rgb(221, 221, 221);
       @include transition(all 0.15s linear);
@@ -129,7 +130,7 @@
       }
 
       &:first-of-type {
-        @include shift(2);
+        @include shift(1.5);
       }
 
       .package_header {

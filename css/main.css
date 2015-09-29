@@ -426,12 +426,13 @@ h2 {
 
   /** PRICES **/
   .prices {
-    height: 700px; }
+    height: 700px;
+    text-align: center; }
     .prices .package {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
+      width: 23.23176%;
       height: 320px;
       border: 1px solid #dddddd;
       -webkit-transition: all 0.15s linear;
@@ -446,7 +447,7 @@ h2 {
         -o-transform: scale(1.05);
         transform: scale(1.05); }
       .prices .package:first-of-type {
-        margin-left: 17.05961%; }
+        margin-left: 12.79471%; }
       .prices .package .package_header {
         height: 100px;
         background-color: #ea3956;
