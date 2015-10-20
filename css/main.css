@@ -231,7 +231,7 @@ h2 {
 
   /** PRICES **/
   .prices {
-    height: 950px; }
+    height: 1350px; }
     .prices .row {
       padding: 0 40px 0 40px; }
     .prices .package {
@@ -350,7 +350,7 @@ h2 {
 
   /** STATS **/
   .stats {
-    height: 250px;
+    height: 300px;
     background-color: #ea3956;
     color: white;
     padding-top: 1.5em; }
@@ -426,14 +426,14 @@ h2 {
 
   /** PRICES **/
   .prices {
-    height: 700px;
+    height: 600px;
     text-align: center; }
     .prices .package {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 23.23176%;
-      height: 320px;
+      height: 350px;
       border: 1px solid #dddddd;
       -webkit-transition: all 0.15s linear;
       -moz-transition: all 0.15s linear;
@@ -494,7 +494,7 @@ h2 {
 
   /** ABOUT ME */
   .aboutme {
-    height: 500px;
+    height: 550px;
     background-color: #F7F7F7; }
     .aboutme .me {
       padding-top: 50px;

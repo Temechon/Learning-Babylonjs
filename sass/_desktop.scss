@@ -1,11 +1,11 @@
 @include media($desktop) {
   $height_header:750px;
   $height_topics:700px;
-  $height_stats:250px;
+  $height_stats:300px;
   $height_quotes:500px;
   $height_screens:700px;
-  $height_pricing:700px;
-  $height_aboutme:500px;
+  $height_pricing:600px;
+  $height_aboutme:550px;
 
   .row {
     @include span-columns(8);
@@ -122,7 +122,7 @@
     text-align: center;
     .package {
       @include span-columns(3);
-      height : 320px;
+      height : 350px;
       border: 1px solid rgb(221, 221, 221);
       @include transition(all 0.15s linear);
       &:hover {
