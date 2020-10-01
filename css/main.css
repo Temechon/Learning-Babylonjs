@@ -7,7 +7,10 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', serif; }
+  font-family: 'Open Sans', serif;
+  font-weight:Normal;
+  border-color:black;
+  border-style:2px;}
 
 section {
   padding: 20px 0 0 0; }
@@ -17,7 +20,8 @@ h1 {
   font-size: 2.5em;
   text-align: center;
   margin-bottom: 0;
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  text-decoration:underline;}
 
 h2 {
   font-weight: 300;
